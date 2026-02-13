@@ -36,6 +36,7 @@ header {
     background: #bbb;
 }
 
+/* Content sections */
 .content {
     display: none;
     padding: 20px;
@@ -44,13 +45,14 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
+/* Show content when tab is selected */
 #tab-text:checked ~ #content-text,
 #tab-pictures:checked ~ #content-pictures,
 #tab-lore:checked ~ #content-lore {
     display: block;
 }
 
+/* Active tab styling */
 #tab-text:checked + label,
 #tab-pictures:checked + label,
 #tab-lore:checked + label {
