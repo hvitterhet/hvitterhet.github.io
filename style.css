@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.tabs {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Hide radio buttons */
+.tabs input[type="radio"] {
+    display: none;
+}
+
+/* Style tab buttons */
+.tabs label {
+    padding: 12px 20px;
+    background: #ddd;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.tabs label:hover {
+    background: #bbb;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+#tab-text:checked ~ #content-text,
+#tab-pictures:checked ~ #content-pictures,
+#tab-lore:checked ~ #content-lore {
+    display: block;
+}
+
+#tab-text:checked + label,
+#tab-pictures:checked + label,
+#tab-lore:checked + label {
+    background: white;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+}
